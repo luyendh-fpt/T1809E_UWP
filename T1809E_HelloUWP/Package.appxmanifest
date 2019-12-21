@@ -11,7 +11,7 @@
     Publisher="CN=xuan hung"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="47e949ad-e5f3-4828-9c97-43913183f43a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:phoneIdentity phoneProductId="47e949ad-e5f3-4828-9c97-43913183f43a" phonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>T1809E_HelloUWP</DisplayName>

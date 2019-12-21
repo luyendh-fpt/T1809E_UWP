@@ -8,12 +8,33 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock>Student Form</TextBlock>
-        <Button x:ConnectionId='2'                           >Go to list</Button>
-        <TextBlock HorizontalAlignment="Left" Margin="84,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Student Name"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:ConnectionId='3' x:Name="StudentName"  HorizontalAlignment="Left" Margin="205,100,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='4' Content="Button" Margin="226,174,0,0" VerticalAlignment="Top"                       />
-    </Grid>
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <Button x:ConnectionId='2'                           >Go to list</Button>
+            <Button x:ConnectionId='3'                      >Demo Async</Button>
+            <TextBlock>Student Form</TextBlock>
+            <TextBlock>First Name</TextBlock>
+            <TextBox x:ConnectionId='4' x:Name="TxtFirstName"/>
+            <TextBlock>Last Name</TextBlock>
+            <TextBox x:ConnectionId='5' x:Name="TxtLastName"/>
+            <TextBlock>password</TextBlock>
+            <PasswordBox x:ConnectionId='6' x:Name="PwdPassword"/>
+            <TextBlock>Confirm password</TextBlock>
+            <PasswordBox x:ConnectionId='7' x:Name="PwdConfirmPassword"/>
+            <TextBlock>address</TextBlock>
+            <TextBox x:ConnectionId='8' x:Name="TxtAddress"/>
+            <TextBlock>phone</TextBlock>
+            <TextBox x:ConnectionId='9' x:Name="TxtPhone"/>
+            <TextBlock>avatar</TextBlock>
+            <TextBox x:ConnectionId='10' x:Name="TxtAvatar"/>
+            <TextBlock>gender</TextBlock>
+            <TextBox x:ConnectionId='11' x:Name="TxtGender"/>
+            <TextBlock>email</TextBlock>
+            <TextBox x:ConnectionId='12' x:Name="TxtEmail"/>
+            <TextBlock>birthday</TextBlock>
+            <TextBox x:ConnectionId='13' x:Name="TxtBirthday"/>
+            <Button x:ConnectionId='14' Content="Button"                       />
+        </StackPanel>
+    </ScrollViewer>
 </Page>
 

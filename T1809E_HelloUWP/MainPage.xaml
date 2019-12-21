@@ -19,13 +19,13 @@
             <TextBox x:Name="RollNumber"/>
             <TextBlock>Full Name</TextBlock>
             <TextBox x:Name="FullName"/>
-            <TextBlock>Gender</TextBlock>
+            <TextBlock>gender</TextBlock>
             <StackPanel Orientation="Horizontal">
-                <RadioButton GroupName="Gender" Tag="Male" Checked="Gender_Choose">Male</RadioButton>
-                <RadioButton GroupName="Gender" Tag="Female" Checked="Gender_Choose">Female</RadioButton>
-                <RadioButton GroupName="Gender" Tag="Other" Checked="Gender_Choose" IsChecked="True">Other</RadioButton>
+                <RadioButton GroupName="gender" Tag="Male" Checked="Gender_Choose">Male</RadioButton>
+                <RadioButton GroupName="gender" Tag="Female" Checked="Gender_Choose">Female</RadioButton>
+                <RadioButton GroupName="gender" Tag="Other" Checked="Gender_Choose" IsChecked="True">Other</RadioButton>
             </StackPanel>
-            <TextBlock>Birthday</TextBlock>
+            <TextBlock>birthday</TextBlock>
             <CalendarDatePicker x:Name="Birthday" DateChanged="Birthday_OnDateChanged"></CalendarDatePicker>
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Button Margin="10" Click="Button_Click">Save</Button>

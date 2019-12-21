@@ -19,13 +19,13 @@
             <TextBox x:ConnectionId='2' x:Name="RollNumber"/>
             <TextBlock>Full Name</TextBlock>
             <TextBox x:ConnectionId='3' x:Name="FullName"/>
-            <TextBlock>Gender</TextBlock>
+            <TextBlock>gender</TextBlock>
             <StackPanel Orientation="Horizontal">
-                <RadioButton x:ConnectionId='7' GroupName="Gender" Tag="Male"                        >Male</RadioButton>
-                <RadioButton x:ConnectionId='8' GroupName="Gender" Tag="Female"                        >Female</RadioButton>
-                <RadioButton x:ConnectionId='9' GroupName="Gender" Tag="Other"                         IsChecked="True">Other</RadioButton>
+                <RadioButton x:ConnectionId='7' GroupName="gender" Tag="Male"                        >Male</RadioButton>
+                <RadioButton x:ConnectionId='8' GroupName="gender" Tag="Female"                        >Female</RadioButton>
+                <RadioButton x:ConnectionId='9' GroupName="gender" Tag="Other"                         IsChecked="True">Other</RadioButton>
             </StackPanel>
-            <TextBlock>Birthday</TextBlock>
+            <TextBlock>birthday</TextBlock>
             <CalendarDatePicker x:ConnectionId='4' x:Name="Birthday"                                     ></CalendarDatePicker>
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Button x:ConnectionId='5' Margin="10"                     >Save</Button>

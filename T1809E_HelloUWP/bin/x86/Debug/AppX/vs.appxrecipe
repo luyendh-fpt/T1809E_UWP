@@ -30,17 +30,29 @@
     <AppXManifest Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-12-14T14:12:23.180</Modified>
+      <Modified>2019-12-21T13:45:42.605</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\T1809E_HelloUWP.exe">
       <PackagePath>entrypoint\T1809E_HelloUWP.exe</PackagePath>
-      <Modified>2019-12-14T14:12:22.754</Modified>
+      <Modified>2019-12-21T13:45:42.064</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\.nuget\packages\htmlagilitypack\1.11.17\lib\uap10.0\HtmlAgilityPack.dll">
+      <PackagePath>HtmlAgilityPack.dll</PackagePath>
+      <Modified>2019-11-25T12:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2019-04-21T18:06:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-03-12T15:22:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\.nuget\packages\system.xml.xpath.xmldocument\4.3.0\lib\netstandard1.3\System.Xml.XPath.XmlDocument.dll">
+      <PackagePath>System.Xml.XPath.XmlDocument.dll</PackagePath>
+      <Modified>2016-11-04T21:57:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -86,23 +98,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\T1809E_HelloUWP.xr.xml">
       <PackagePath>T1809E_HelloUWP.xr.xml</PackagePath>
-      <Modified>2019-12-14T14:12:22.553</Modified>
+      <Modified>2019-12-21T11:39:33.184</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-12-14T14:12:22.566</Modified>
+      <Modified>2019-12-21T13:45:41.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Examples\GridLayoutDemo.xbf">
+      <PackagePath>Examples\GridLayoutDemo.xbf</PackagePath>
+      <Modified>2019-12-21T13:45:41.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Examples\SplitViewExample.xbf">
+      <PackagePath>Examples\SplitViewExample.xbf</PackagePath>
+      <Modified>2019-12-21T13:45:41.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-12-14T14:12:22.566</Modified>
+      <Modified>2019-12-21T13:45:41.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\ListStudent.xbf">
       <PackagePath>Pages\ListStudent.xbf</PackagePath>
-      <Modified>2019-12-14T14:12:22.566</Modified>
+      <Modified>2019-12-21T13:45:41.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\StudentForm.xbf">
       <PackagePath>Pages\StudentForm.xbf</PackagePath>
-      <Modified>2019-12-14T14:12:22.566</Modified>
+      <Modified>2019-12-21T13:45:41.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -110,11 +130,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-12-14T13:43:55.574</Modified>
+      <Modified>2019-12-21T13:14:55.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Core\T1809E_HelloUWP.exe">
       <PackagePath>T1809E_HelloUWP.exe</PackagePath>
-      <Modified>2019-12-14T14:12:23.174</Modified>
+      <Modified>2019-12-21T13:45:42.600</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

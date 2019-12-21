@@ -30,7 +30,7 @@ namespace T1809E_HelloUWP.Pages
             this._service = new InmemoryStudentService();
             foreach (var item in _service.GetList())
             {
-                  MyStudents.Items.Add(item.FullName);          
+                  MyStudents.Items.Add(item.firstName);  
             }
         }
 

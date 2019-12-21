@@ -28,8 +28,17 @@
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\T1809E_HelloUWP.exe">
       <PackagePath>entrypoint\T1809E_HelloUWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\.nuget\packages\htmlagilitypack\1.11.17\lib\uap10.0\HtmlAgilityPack.dll">
+      <PackagePath>HtmlAgilityPack.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\.nuget\packages\system.xml.xpath.xmldocument\4.3.0\lib\netstandard1.3\System.Xml.XPath.XmlDocument.dll">
+      <PackagePath>System.Xml.XPath.XmlDocument.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -69,6 +78,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Examples\GridLayoutDemo.xbf">
+      <PackagePath>Examples\GridLayoutDemo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Examples\SplitViewExample.xbf">
+      <PackagePath>Examples\SplitViewExample.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
