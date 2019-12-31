@@ -11,29 +11,28 @@
     <ScrollViewer>
         <StackPanel Margin="20">
             <Button x:ConnectionId='2'                           >Go to list</Button>
-            <Button x:ConnectionId='3'                      >Demo Async</Button>
             <TextBlock>Student Form</TextBlock>
             <TextBlock>First Name</TextBlock>
-            <TextBox x:ConnectionId='4' x:Name="TxtFirstName"/>
+            <TextBox x:ConnectionId='3' x:Name="TxtFirstName"/>
             <TextBlock>Last Name</TextBlock>
-            <TextBox x:ConnectionId='5' x:Name="TxtLastName"/>
+            <TextBox x:ConnectionId='4' x:Name="TxtLastName"/>
             <TextBlock>password</TextBlock>
-            <PasswordBox x:ConnectionId='6' x:Name="PwdPassword"/>
+            <PasswordBox x:ConnectionId='5' x:Name="PwdPassword"/>
             <TextBlock>Confirm password</TextBlock>
-            <PasswordBox x:ConnectionId='7' x:Name="PwdConfirmPassword"/>
+            <PasswordBox x:ConnectionId='6' x:Name="PwdConfirmPassword"/>
             <TextBlock>address</TextBlock>
-            <TextBox x:ConnectionId='8' x:Name="TxtAddress"/>
+            <TextBox x:ConnectionId='7' x:Name="TxtAddress"/>
             <TextBlock>phone</TextBlock>
-            <TextBox x:ConnectionId='9' x:Name="TxtPhone"/>
+            <TextBox x:ConnectionId='8' x:Name="TxtPhone"/>
             <TextBlock>avatar</TextBlock>
-            <TextBox x:ConnectionId='10' x:Name="TxtAvatar"/>
+            <TextBox x:ConnectionId='9' x:Name="TxtAvatar"/>
             <TextBlock>gender</TextBlock>
-            <TextBox x:ConnectionId='11' x:Name="TxtGender"/>
+            <TextBox x:ConnectionId='10' x:Name="TxtGender"/>
             <TextBlock>email</TextBlock>
-            <TextBox x:ConnectionId='12' x:Name="TxtEmail"/>
+            <TextBox x:ConnectionId='11' x:Name="TxtEmail"/>
             <TextBlock>birthday</TextBlock>
-            <TextBox x:ConnectionId='13' x:Name="TxtBirthday"/>
-            <Button x:ConnectionId='14' Content="Button"                       />
+            <TextBox x:ConnectionId='12' x:Name="TxtBirthday"/>
+            <Button x:ConnectionId='13' Content="Button"                       />
         </StackPanel>
     </ScrollViewer>
 </Page>

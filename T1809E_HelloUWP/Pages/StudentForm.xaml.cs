@@ -42,7 +42,7 @@ namespace T1809E_HelloUWP.Pages
             this._service = new ApiStudentService();
         }
 
-        private void Create_Student(object sender, RoutedEventArgs e)
+        private async void Create_Student(object sender, RoutedEventArgs e)
         {
             // lấy dữ liệu từ form, chuyển thành đối tượng member với các trường tương ứng.
             var member = new Student()
@@ -63,7 +63,8 @@ namespace T1809E_HelloUWP.Pages
             {
                 // thông báo lỗi nếu có.
             }
-            this._service.Create(member);
+            Student student = await this._service.Create(member);
+            Debug.WriteLine("Create success! "  + student.id);
             //_service.Create(student);
         }
 

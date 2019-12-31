@@ -132,13 +132,21 @@
     <Compile Include="Pages\ListStudent.xaml.cs">
       <DependentUpon>ListStudent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\LogInPage.xaml.cs">
+      <DependentUpon>LogInPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MemberInformation.xaml.cs">
+      <DependentUpon>MemberInformation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\StudentForm.xaml.cs">
       <DependentUpon>StudentForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ApiStudentService.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
     <Compile Include="Services\InmemoryStudentService.cs" />
     <Compile Include="Services\IStudentService.cs" />
+    <Compile Include="Services\MemberService.cs" />
     <Compile Include="Services\SQLiteStudentService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +182,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\ListStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LogInPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MemberInformation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

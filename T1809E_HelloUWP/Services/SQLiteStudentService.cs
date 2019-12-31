@@ -9,27 +9,27 @@ namespace T1809E_HelloUWP.Services
 {
     class SQLiteStudentService: IStudentService
     {
-        public Student Create(Student student)
+        public Task<Student> Create(Student student)
         {
             throw new NotImplementedException();
         }
 
-        public List<Student> GetList()
+        public Task<List<Student>> GetList()
         {
             throw new NotImplementedException();
         }
 
-        public Student GetDetail(string rollNumber)
+        public Task<Student> GetDetail(string rollNumber)
         {
             throw new NotImplementedException();
         }
 
-        public Student Update(Student student)
+        public Task<Student> Update(Student student)
         {
             throw new NotImplementedException();
         }
 
-        public bool Delete(string rollNumber)
+        public Task<bool> Delete(string rollNumber)
         {
             throw new NotImplementedException();
         }

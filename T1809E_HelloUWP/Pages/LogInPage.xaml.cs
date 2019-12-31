@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -21,22 +23,27 @@ namespace T1809E_HelloUWP.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class ListStudent : Page
+    public sealed partial class LogInPage : Page
     {
-        private IStudentService _service;
-        public ListStudent()
+        private AuthenticationService _service = new AuthenticationService();
+        public static string Token;
+        public LogInPage()
         {
             this.InitializeComponent();
-            this._service = new InmemoryStudentService();
-            foreach (var item in _service.GetList().Result)
-            {
-                  MyStudents.Items.Add(item.firstName);  
-            }
         }
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private async void Login_Clicked(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(StudentForm));
+            var email = Email.Text;
+            var password = Password.Password;
+
+            Token = await this._service.LoginTask(email, password);
+            this.Frame.Navigate(typeof(Pages.MemberInformation));
+        }
+        
+        private void Reset_Clicked(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

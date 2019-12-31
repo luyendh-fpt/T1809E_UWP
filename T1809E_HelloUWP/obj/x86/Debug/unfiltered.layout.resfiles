@@ -11,6 +11,8 @@ Examples\GridLayoutDemo.xbf
 Examples\SplitViewExample.xbf
 MainPage.xbf
 Pages\ListStudent.xbf
+Pages\LogInPage.xbf
+Pages\MemberInformation.xbf
 Pages\StudentForm.xbf
 T1809E_HelloUWP.xr.xml
 Properties\Default.rd.xml

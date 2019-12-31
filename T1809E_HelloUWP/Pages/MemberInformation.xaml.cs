@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using T1809E_HelloUWP.Models;
 using T1809E_HelloUWP.Services;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -21,22 +22,20 @@ namespace T1809E_HelloUWP.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class ListStudent : Page
+    public sealed partial class MemberInformation : Page
     {
-        private IStudentService _service;
-        public ListStudent()
+        private MemberService _memberService = new MemberService();
+        public MemberInformation()
         {
             this.InitializeComponent();
-            this._service = new InmemoryStudentService();
-            foreach (var item in _service.GetList().Result)
-            {
-                  MyStudents.Items.Add(item.firstName);  
-            }
+            LoadMemberInformation();
         }
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private async void LoadMemberInformation()
         {
-            this.Frame.Navigate(typeof(StudentForm));
+            Student student = await this._memberService.GetMemberInformation(LogInPage.Token);
+            MemberName.Text = student.firstName;
+            MemberAddress.Text = student.address;
         }
     }
 }

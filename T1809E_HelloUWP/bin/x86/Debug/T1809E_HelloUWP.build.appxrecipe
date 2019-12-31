@@ -91,6 +91,12 @@
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\ListStudent.xbf">
       <PackagePath>Pages\ListStudent.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\LogInPage.xbf">
+      <PackagePath>Pages\LogInPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\MemberInformation.xbf">
+      <PackagePath>Pages\MemberInformation.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\StudentForm.xbf">
       <PackagePath>Pages\StudentForm.xbf</PackagePath>
     </AppxPackagedFile>

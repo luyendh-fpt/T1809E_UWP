@@ -9,10 +9,10 @@ namespace T1809E_HelloUWP.Services
 {
     interface IStudentService
     {
-        Student Create(Student student);
-        List<Student> GetList();
-        Student GetDetail(string rollNumber);
-        Student Update(Student student);
-        bool Delete(string rollNumber);
+        Task<Student> Create(Student student);
+        Task<List<Student>> GetList();
+        Task<Student> GetDetail(string rollNumber);
+        Task<Student> Update(Student student);
+        Task<bool> Delete(string rollNumber);
     }
 }

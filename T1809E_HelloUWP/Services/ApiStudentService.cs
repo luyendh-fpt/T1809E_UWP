@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using T1809E_HelloUWP.Models;
 
 namespace T1809E_HelloUWP.Services
@@ -15,9 +16,30 @@ namespace T1809E_HelloUWP.Services
         private static string REGISTER_API_URL = "https://2-dot-backup-server-002.appspot.com/_api/v2/members";
         private static string CONTENT_TYPE = "application/json";
 
-        public Student Create(Student member)
+        public Task<Student> Create(Student member)
         {
-            return PostStudent(member).GetAwaiter().GetResult();
+            Debug.WriteLine("Called here");
+            return PostStudent(member);
+        }
+
+        public Task<List<Student>> GetList()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Student> GetDetail(string rollNumber)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Student> Update(Student student)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Delete(string rollNumber)
+        {
+            throw new NotImplementedException();
         }
 
         private async Task<Student> PostStudent(Student member)
@@ -33,31 +55,13 @@ namespace T1809E_HelloUWP.Services
             var response = await httpClient.PostAsync(REGISTER_API_URL,contentToSend);
             // đọc dữ liệu response từ người nhận.
             var stringContent = await response.Content.ReadAsStringAsync();
+
             // chuyển định dạng dữ liệu về đối tượng của C#
             var returnStudent = JsonConvert.DeserializeObject<Student>(stringContent);
             // in ra một thuộc tính của đối tượng đó.
-            Debug.WriteLine(returnStudent.id);
+            Debug.WriteLine(JObject.Parse(stringContent)["id"]);
             return returnStudent;
         }
 
-        public List<Student> GetList()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Student GetDetail(string rollNumber)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Student Update(Student student)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Delete(string rollNumber)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
