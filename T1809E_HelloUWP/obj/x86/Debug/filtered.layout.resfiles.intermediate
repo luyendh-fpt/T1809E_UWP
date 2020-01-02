@@ -10,6 +10,8 @@ App.xbf
 Examples\GridLayoutDemo.xbf
 Examples\SplitViewExample.xbf
 MainPage.xbf
+Pages\CameraDemo.xbf
+Pages\DemoFile.xbf
 Pages\ListStudent.xbf
 Pages\LogInPage.xbf
 Pages\MemberInformation.xbf

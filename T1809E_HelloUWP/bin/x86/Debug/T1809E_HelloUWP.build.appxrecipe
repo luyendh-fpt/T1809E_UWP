@@ -88,6 +88,12 @@
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\CameraDemo.xbf">
+      <PackagePath>Pages\CameraDemo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\DemoFile.xbf">
+      <PackagePath>Pages\DemoFile.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\ListStudent.xbf">
       <PackagePath>Pages\ListStudent.xbf</PackagePath>
     </AppxPackagedFile>

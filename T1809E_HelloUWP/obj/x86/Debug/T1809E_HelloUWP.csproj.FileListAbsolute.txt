@@ -79,3 +79,13 @@ C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pa
 C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\MemberInformation.g.cs
 C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\MemberInformation.xaml
 C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\MemberInformation.xbf
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\DemoFile.xbf
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\DemoFile.g.i.cs
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\DemoFile.g.cs
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\DemoFile.xaml
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\DemoFile.xbf
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\CameraDemo.g.i.cs
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\CameraDemo.g.cs
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\CameraDemo.xaml
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\CameraDemo.xbf
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\CameraDemo.xbf

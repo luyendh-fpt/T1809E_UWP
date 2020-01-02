@@ -33,6 +33,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
@@ -67,6 +68,12 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView" />
     <RootType FullName="T1809E_HelloUWP.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="T1809E_HelloUWP.Pages.CameraDemo" />
+    <RootType FullName="T1809E_HelloUWP.Pages.DemoFile" />
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Content" />
       <RootEvent Name="Click" />
