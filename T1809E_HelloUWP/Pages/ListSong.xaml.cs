@@ -28,24 +28,78 @@ namespace T1809E_HelloUWP.Pages
     /// </summary>
     public sealed partial class ListSong : Page
     {
+        private Song currentSong;
         private SongService _songService;
+        private bool _isPlaying = false;
+
         public ListSong()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
 
         private void FrameworkElement_OnLoaded(object sender, RoutedEventArgs e)
         {
-            this._songService = new SongService();
-            this.Songs.ItemsSource = this._songService.LoadSongs();
+            _songService = new SongService();
+            Songs.ItemsSource = _songService.LoadSongs();
         }
 
         private void Songs_OnItemClick(object sender, ItemClickEventArgs e)
         {
-            var currentSong = e.ClickedItem as Song;
+            currentSong = e.ClickedItem as Song;
             MyPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.Link));
             MyPlayer.MediaPlayer.Play();
-            Debug.WriteLine("Song click me: " + currentSong.Name);
+            PlayButton.Icon = new SymbolIcon(Symbol.Pause);
+            _isPlaying = true;
+            StatusText.Text = "Now Playing: " + currentSong.Name;
+        }
+
+        [Obsolete]
+        private void PlayButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            if (Songs.ItemsSource == null) return;
+            if (currentSong == null)
+            {
+                currentSong = _songService.LoadSongs().FirstOrDefault();
+                MyPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.Link));
+                Songs.SelectedIndex = 0;
+            }
+
+            if (_isPlaying)
+            {
+                MyPlayer.MediaPlayer.Pause();
+                PlayButton.Icon = new SymbolIcon(Symbol.Play);
+                StatusText.Text = "Paused";
+                _isPlaying = false;
+            }
+            else
+            {
+                MyPlayer.MediaPlayer.Play();
+                PlayButton.Icon = new SymbolIcon(Symbol.Pause);
+                StatusText.Text = "Now Playing: " + currentSong.Name;
+                _isPlaying = true;
+            }
+        }
+
+        private void Next_OnClick(object sender, RoutedEventArgs e)
+        {
+            var currentIndex = Songs.SelectedIndex;
+            currentIndex++;
+            if (currentIndex >= Songs.Items.Count)
+            {
+                currentIndex = 0;
+            }
+            currentSong = Songs.Items[currentIndex] as Song;
+            Songs.SelectedIndex = currentIndex;
+            MyPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.Link));
+            MyPlayer.MediaPlayer.Play();
+            PlayButton.Icon = new SymbolIcon(Symbol.Pause);
+            _isPlaying = true;
+            StatusText.Text = "Now Playing: " + currentSong.Name;
+        }
+
+        private void Previous_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
