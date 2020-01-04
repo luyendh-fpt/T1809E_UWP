@@ -79,6 +79,9 @@
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\ApplicationLayout.xbf">
+      <PackagePath>ApplicationLayout.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Examples\GridLayoutDemo.xbf">
       <PackagePath>Examples\GridLayoutDemo.xbf</PackagePath>
     </AppxPackagedFile>
@@ -93,6 +96,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\DemoFile.xbf">
       <PackagePath>Pages\DemoFile.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\ListSong.xbf">
+      <PackagePath>Pages\ListSong.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\Pages\ListStudent.xbf">
       <PackagePath>Pages\ListStudent.xbf</PackagePath>

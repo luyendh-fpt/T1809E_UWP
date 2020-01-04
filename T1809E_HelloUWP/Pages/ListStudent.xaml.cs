@@ -27,11 +27,11 @@ namespace T1809E_HelloUWP.Pages
         public ListStudent()
         {
             this.InitializeComponent();
-            this._service = new InmemoryStudentService();
-            foreach (var item in _service.GetList().Result)
-            {
-                  MyStudents.Items.Add(item.firstName);  
-            }
+            //this._service = new InmemoryStudentService();
+            //foreach (var item in _service.GetList().Result)
+            //{
+            //      MyStudents.Items.Add(item.firstName);  
+            //}
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)

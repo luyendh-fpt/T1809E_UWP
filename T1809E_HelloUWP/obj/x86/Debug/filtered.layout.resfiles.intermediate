@@ -7,11 +7,13 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
+ApplicationLayout.xbf
 Examples\GridLayoutDemo.xbf
 Examples\SplitViewExample.xbf
 MainPage.xbf
 Pages\CameraDemo.xbf
 Pages\DemoFile.xbf
+Pages\ListSong.xbf
 Pages\ListStudent.xbf
 Pages\LogInPage.xbf
 Pages\MemberInformation.xbf

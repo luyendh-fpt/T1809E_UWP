@@ -18,7 +18,8 @@ namespace T1809E_HelloUWP.Services
 
         public Task<List<Student>> GetList()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return null;
         }
 
         public Task<Student> GetDetail(string rollNumber)
