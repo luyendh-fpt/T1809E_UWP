@@ -25,7 +25,28 @@ namespace T1809E_HelloUWP.Models
 
         public List<Member> GetList()
         {
-            return new List<Member>();
+            List<Member> list = new List<Member>();
+            var sqlConnection = SQLiteHelper.CreateInstance().SQLiteConnection;
+            var sqlCommandString = "select * from Members";
+            using (var stt = sqlConnection.Prepare(sqlCommandString))
+            {
+                while (SQLiteResult.ROW == stt.Step())
+                {
+                   var id = stt[0].ToString();
+                   var name = (string) stt[1];
+                   var username = (string) stt["Username"];
+                   var password = (string) stt["Password"];
+                   var member = new Member()
+                   {
+                       Id = Int32.Parse(id),
+                       Name = name,
+                       Username = username,
+                       Password = password
+                   };
+                   list.Add(member);
+                }
+            }
+            return list;
         }
 
         public Member GetDetail(int id)

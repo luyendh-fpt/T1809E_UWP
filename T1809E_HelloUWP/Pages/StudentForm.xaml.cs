@@ -47,6 +47,11 @@ namespace T1809E_HelloUWP.Pages
 
         private async void Create_Student(object sender, RoutedEventArgs e)
         {
+            var list = this._service.GetListStudent();
+            for (int i = 0; i < list.Count; i++)
+            {
+                Debug.WriteLine(list[i].Name);
+            }
             Console.WriteLine();
             // lấy dữ liệu từ form, chuyển thành đối tượng member với các trường tương ứng.
             //var member = new Student()
@@ -67,14 +72,14 @@ namespace T1809E_HelloUWP.Pages
             //{
             //    // thông báo lỗi nếu có.
             //}
-            Member member = new Member()
-            {
-                Name = TxtLastName.Text,
-                Username = TxtFirstName.Text,
-                Password = "123"
-            };
+            //Member member = new Member()
+            //{
+            //    Name = TxtLastName.Text,
+            //    Username = TxtFirstName.Text,
+            //    Password = "123"
+            //};
 
-            this._service.Create(member);
+            //this._service.Create(member);
             //_service.Create(student);
         }
 

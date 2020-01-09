@@ -21,6 +21,11 @@ namespace T1809E_HelloUWP.Services
             memberModel.Save(member);
         }
 
+        public List<Member> GetListStudent()
+        {
+            return memberModel.GetList();
+        }
+
         public Task<Student> Create(Student student)
         {
             throw new NotImplementedException();
