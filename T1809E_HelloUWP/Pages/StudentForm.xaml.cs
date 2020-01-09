@@ -22,6 +22,7 @@ using Newtonsoft.Json;
 using T1809E_HelloUWP.Models;
 using T1809E_HelloUWP.Services;
 using HtmlAgilityPack;
+using SQLitePCL;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,39 +33,48 @@ namespace T1809E_HelloUWP.Pages
     /// </summary>
     public sealed partial class StudentForm : Page
     {
-        private IStudentService _service;
+        //private IStudentService _service;
+        private SQLiteStudentService _service;
         //private int linkCount = 0;
 
         public StudentForm()
         {
             this.InitializeComponent();
             //this._service = new InmemoryStudentService();
-            this._service = new ApiStudentService();
+            //this._service = new ApiStudentService();
+            this._service = new SQLiteStudentService();
         }
 
         private async void Create_Student(object sender, RoutedEventArgs e)
         {
+            Console.WriteLine();
             // lấy dữ liệu từ form, chuyển thành đối tượng member với các trường tương ứng.
-            var member = new Student()
-            {
-                firstName = TxtFirstName.Text,
-                lastName = TxtLastName.Text,
-                password = PwdPassword.Password,
-                address = TxtAddress.Text,
-                phone = TxtPhone.Text,
-                avatar = TxtAvatar.Text,
-                gender = Convert.ToInt32(TxtGender.Text),
-                email = TxtEmail.Text,
-                birthday = TxtBirthday.Text
-            };
+            //var member = new Student()
+            //{
+            //    firstName = TxtFirstName.Text,
+            //    lastName = TxtLastName.Text,
+            //    password = PwdPassword.Password,
+            //    address = TxtAddress.Text,
+            //    phone = TxtPhone.Text,
+            //    avatar = TxtAvatar.Text,
+            //    gender = Convert.ToInt32(TxtGender.Text),
+            //    email = TxtEmail.Text,
+            //    birthday = TxtBirthday.Text
+            //};
             // Validate dữ liệu
-            var errors = member.CheckValidate();
-            if (errors.Count > 0)
+            //var errors = member.CheckValidate();
+            //if (errors.Count > 0)
+            //{
+            //    // thông báo lỗi nếu có.
+            //}
+            Member member = new Member()
             {
-                // thông báo lỗi nếu có.
-            }
-            Student student = await this._service.Create(member);
-            Debug.WriteLine("Create success! "  + student.id);
+                Name = TxtLastName.Text,
+                Username = TxtFirstName.Text,
+                Password = "123"
+            };
+
+            this._service.Create(member);
             //_service.Create(student);
         }
 
@@ -144,6 +154,6 @@ namespace T1809E_HelloUWP.Pages
             this.Frame.Navigate(typeof(ListStudent));
         }
 
-       
+
     }
 }

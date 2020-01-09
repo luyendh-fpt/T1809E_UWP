@@ -99,3 +99,10 @@ C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pa
 C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\ListSong.g.cs
 C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\ListSong.xaml
 C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\Pages\ListSong.xbf
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\SQLitePCL.Ext.dll
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\SQLitePCL.Ext.pri
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\bin\x86\Debug\SQLitePCL.dll
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\SQLitePCL\en\SQLitePCL.Resources.resw
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\resources.en.resfiles
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\resources.en.resfiles.intermediate
+C:\Users\xuan hung\source\repos\T1809E_HelloUWP\T1809E_HelloUWP\obj\x86\Debug\SQLitePCL.Ext.pri.xml

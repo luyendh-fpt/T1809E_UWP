@@ -7,8 +7,20 @@ using T1809E_HelloUWP.Models;
 
 namespace T1809E_HelloUWP.Services
 {
-    class SQLiteStudentService: IStudentService
+    public class SQLiteStudentService: IStudentService
     {
+        private MemberModel memberModel;
+
+        public SQLiteStudentService()
+        {
+            memberModel = new MemberModel();
+        }
+
+        public void Create(Member member)
+        {
+            memberModel.Save(member);
+        }
+
         public Task<Student> Create(Student student)
         {
             throw new NotImplementedException();
